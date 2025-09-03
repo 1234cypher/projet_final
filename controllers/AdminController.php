@@ -160,10 +160,13 @@ class AdminController {
             redirect('admin');
         }
 
+        // Set $_GET['id'] for compatibility with view
+        $_GET['id'] = $id;
+
         try {
             $contact = $this->getContactById($id);
             if (!$contact) {
-                $_SESSION['flash_message'] = ['success' => false, 'message' => 'Message non trouvé'];
+                $_SESSION['success_message'] = 'Message non trouvé';
                 redirect('admin/contacts');
             }
 
@@ -171,11 +174,12 @@ class AdminController {
             $this->markContactAsRead($id);
         } catch (PDOException $e) {
             error_log("Message detail fetch error: " . $e->getMessage());
-            $_SESSION['flash_message'] = ['success' => false, 'message' => 'Erreur lors du chargement du message'];
+            $_SESSION['success_message'] = 'Erreur lors du chargement du message';
             include 'views/admin/error.php';
             return;
         }
 
+        // Pass data to view
         include 'views/admin/message-detail.php';
     }
 
@@ -697,7 +701,7 @@ class AdminController {
 
     private function handleContactAction() {
         if (!verifyCSRFToken($_POST['csrf_token'] ?? '')) {
-            $_SESSION['flash_message'] = ['success' => false, 'message' => 'Token CSRF invalide'];
+            $_SESSION['success_message'] = 'Token CSRF invalide';
             redirect('admin/contacts');
             return;
         }
@@ -706,7 +710,7 @@ class AdminController {
         $id = filter_input(INPUT_POST, 'id', FILTER_SANITIZE_NUMBER_INT);
 
         if (empty($id)) {
-            $_SESSION['flash_message'] = ['success' => false, 'message' => 'ID manquant'];
+            $_SESSION['success_message'] = 'ID manquant';
             redirect('admin/contacts');
             return;
         }
@@ -716,24 +720,24 @@ class AdminController {
                 case 'mark_read':
                     $stmt = $this->db->prepare("UPDATE contacts SET status = 'read', updated_at = datetime('now') WHERE id = ?");
                     $stmt->execute([$id]);
-                    $_SESSION['flash_message'] = ['success' => true, 'message' => 'Message marqué comme lu'];
+                    $_SESSION['success_message'] = 'Message marqué comme lu';
                     break;
                 case 'mark_new':
                     $stmt = $this->db->prepare("UPDATE contacts SET status = 'new', updated_at = datetime('now') WHERE id = ?");
                     $stmt->execute([$id]);
-                    $_SESSION['flash_message'] = ['success' => true, 'message' => 'Message marqué comme nouveau'];
+                    $_SESSION['success_message'] = 'Message marqué comme nouveau';
                     break;
                 case 'delete':
                     $stmt = $this->db->prepare("DELETE FROM contacts WHERE id = ?");
                     $stmt->execute([$id]);
-                    $_SESSION['flash_message'] = ['success' => true, 'message' => 'Message supprimé'];
+                    $_SESSION['success_message'] = 'Message supprimé';
                     break;
                 default:
                     throw new Exception('Action non reconnue');
             }
         } catch (Exception $e) {
             error_log("Contact action error: " . $e->getMessage());
-            $_SESSION['flash_message'] = ['success' => false, 'message' => 'Erreur lors de l\'action : ' . $e->getMessage()];
+            $_SESSION['success_message'] = 'Erreur lors de l\'action : ' . $e->getMessage();
         }
         redirect('admin/contacts');
     }

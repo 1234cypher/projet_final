@@ -1,1 +1,1 @@
-admin_logged_in|b:1;admin_id|i:1;new_appointment|b:1;csrf_token|s:64:"f79f3042f2e1fb363915cb25681daffad05d7b85ae2523edf2a6bf3b1256e171";
+admin_logged_in|b:1;admin_id|i:1;new_appointment|b:1;error_message|s:46:"Erreur lors de l'enregistrement du rendez-vous";csrf_token|s:64:"94d2d0279d35d4c635b7c309c5fdf81a9f545aa6a29e8538671f407b6be925c1";success_message|s:28:"Message envoyé avec succès";

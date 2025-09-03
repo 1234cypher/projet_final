@@ -402,7 +402,7 @@
                                 <div class="file-upload-icon"><i class="fas fa-cloud-upload-alt" aria-hidden="true"></i></div>
                                 <h3>Joindre des documents</h3>
                                 <p>Glissez-déposez vos fichiers ici ou cliquez pour sélectionner (max: 5MB, 3 fichiers max)</p>
-                                <input type="file" id="fileInput" name="files[]" multiple accept=".pdf,.jpg,.jpeg,.png" class="file-input">
+                        <input type="file" id="fileInput" name="documents[]" multiple accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" class="file-input">
                                 <button type="button" class="file-upload-button" onclick="document.getElementById('fileInput').click()">Sélectionner des fichiers</button>
                             </div>
                             <div class="upload-info"><i class="fas fa-info-circle" aria-hidden="true"></i> Formats acceptés : PDF, JPG, PNG</div>

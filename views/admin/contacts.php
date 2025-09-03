@@ -1,3 +1,58 @@
+<?php
+// Connexion à la base de données (ajustez selon votre configuration)
+require_once __DIR__ . '/../../includes/Database.php';
+$db = new Database();
+$conn = $db->getConnection();
+
+// Récupérer les paramètres de filtrage
+$status = $_GET['status'] ?? '';
+$date = $_GET['date'] ?? '';
+$search = $_GET['search'] ?? '';
+$sort = $_GET['sort'] ?? 'newest';
+$success = $_SESSION['success_message'] ?? '';
+unset($_SESSION['success_message']); // Effacer le message après affichage
+
+// Construire la requête SQL avec file_count
+$sql = "SELECT c.*, 
+        (SELECT COUNT(*) FROM contact_files cf WHERE cf.contact_id = c.id) as file_count 
+        FROM contacts c 
+        WHERE 1=1";
+
+$params = [];
+if ($status) {
+    $sql .= " AND c.status = ?";
+    $params[] = $status;
+}
+if ($date) {
+    $sql .= " AND DATE(c.created_at) = ?";
+    $params[] = $date;
+}
+if ($search) {
+    $sql .= " AND (LOWER(c.name) LIKE ? OR LOWER(c.email) LIKE ? OR LOWER(c.subject) LIKE ? OR LOWER(c.message) LIKE ?)";
+    $search_param = "%" . strtolower($search) . "%";
+    $params[] = $search_param;
+    $params[] = $search_param;
+    $params[] = $search_param;
+    $params[] = $search_param;
+}
+
+// Tri
+if ($sort === 'newest') {
+    $sql .= " ORDER BY c.created_at DESC";
+} elseif ($sort === 'oldest') {
+    $sql .= " ORDER BY c.created_at ASC";
+} elseif ($sort === 'name') {
+    $sql .= " ORDER BY c.name ASC";
+}
+
+$stmt = $conn->prepare($sql);
+$stmt->execute($params);
+$contacts = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+// Log pour débogage
+error_log('Fetched ' . count($contacts) . ' contacts with file counts');
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>

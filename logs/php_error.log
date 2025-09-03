@@ -1,0 +1,20 @@
+[03-Sep-2025 18:23:08 Europe/Paris] Contact form submission received: /contact
+[03-Sep-2025 18:23:08 Europe/Paris] PHP Notice:  session_start(): Ignoring session_start() because a session is already active (started from /home/migos/Bureau/project_stage/includes/config.php on line 27) in /home/migos/Bureau/project_stage/contact_handler.php on line 12
+[03-Sep-2025 18:23:08 Europe/Paris] Database Constructor Warning: DB_HOST, DB_USER, or DB_PASS not defined. Using SQLite defaults.
+[03-Sep-2025 18:23:08 Europe/Paris] Database: Attempting connection to SQLite: /home/migos/Bureau/project_stage/includes/../database/cabinet_excellence.db
+[03-Sep-2025 18:23:08 Europe/Paris] Database: Connection established successfully
+[03-Sep-2025 18:23:08 Europe/Paris] Database: Initializing tables
+[03-Sep-2025 18:23:08 Europe/Paris] Database: Upgrading schema
+[03-Sep-2025 18:23:08 Europe/Paris] Database: Schema upgraded successfully
+[03-Sep-2025 18:23:08 Europe/Paris] Database: Indexes created successfully
+[03-Sep-2025 18:23:08 Europe/Paris] Database: Checking for default data insertion
+[03-Sep-2025 18:23:08 Europe/Paris] Database: Default data already present, skipping insertion
+[03-Sep-2025 18:23:08 Europe/Paris] Database: Tables initialized successfully
+[03-Sep-2025 18:23:08 Europe/Paris] Database connection successful
+[03-Sep-2025 18:23:08 Europe/Paris] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/migos/Bureau/project_stage/contact_handler.php on line 31
+[03-Sep-2025 18:23:08 Europe/Paris] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/migos/Bureau/project_stage/contact_handler.php on line 33
+[03-Sep-2025 18:23:08 Europe/Paris] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/migos/Bureau/project_stage/contact_handler.php on line 34
+[03-Sep-2025 18:23:08 Europe/Paris] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/migos/Bureau/project_stage/contact_handler.php on line 35
+[03-Sep-2025 18:23:08 Europe/Paris] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/migos/Bureau/project_stage/contact_handler.php on line 36
+[03-Sep-2025 18:23:08 Europe/Paris] Contact inserted successfully: ID 2
+[03-Sep-2025 18:23:08 Europe/Paris] Failed to save appointment: SQLSTATE[HY000]: General error: 1 table appointments has no column named appointment_date

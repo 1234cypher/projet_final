@@ -19,7 +19,7 @@ try {
 
     // Définir les routes
     $router->add('/', 'HomeController', 'index', 'GET');
-    $router->add('/contact', 'ContactController', 'submit', 'POST');
+    $router->add('/contact', 'ContactHandlerController', 'submit', 'POST');
     $router->add('/api/appointment-slots', 'ContactController', 'getAvailableSlots', 'GET');
     $router->add('/admin', 'AdminController', 'login', 'GET');
     $router->add('/admin/login', 'AdminController', 'login', 'POST');

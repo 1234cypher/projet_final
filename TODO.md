@@ -1,15 +1,14 @@
-# Fix Deprecated FILTER_SANITIZE_STRING
+# Fix Message Details Action
 
-## Steps to Complete:
-1. [x] Fix AdminController.php - replace all FILTER_SANITIZE_STRING instances
-2. [x] Fix HomeController.php - replace all FILTER_SANITIZE_STRING instances
-3. [ ] Test the application to ensure functionality
+## Issues Identified
+- Parameter passing: messageDetail method doesn't set $_GET['id']
+- Redundant data fetching: Both controller and view fetch contact/files
+- Status update duplication: Both update status to 'read'
+- Session message inconsistency: Controller uses 'flash_message' array, view expects 'success_message' string
 
-## Files to Edit:
-- [x] controllers/AdminController.php
-- [x极] controllers/HomeController.php
-
-## Replacement Strategy:
-- Use FILTER_SANITIZE_FULL_SPECIAL_CHARS for general string sanitization
-- Use appropriate specific filters where applicable
-- Add trim() where appropriate for user input
+## Tasks
+- [x] Modify AdminController::messageDetail to set $_GET['id'] and pass data
+- [x] Remove status update from message-detail.php
+- [x] Fix session message handling in AdminController
+- [x] Update message-detail.php to use controller data when available
+- [x] Test the fix by clicking view button in contacts.php

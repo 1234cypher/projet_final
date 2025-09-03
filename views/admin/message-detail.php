@@ -1,3 +1,53 @@
+<?php
+// Connexion à la base de données
+require_once __DIR__ . '/../../includes/Database.php';
+require_once __DIR__ . '/../../includes/config.php'; // Pour ROOT_PATH et autres constantes
+
+$db = new Database();
+$conn = $db->getConnection();
+
+// Récupérer l'ID du contact depuis l'URL
+$contact_id = isset($_GET['id']) ? (int)$_GET['id'] : 0;
+
+// Récupérer les détails du contact
+$stmt = $conn->prepare("SELECT * FROM contacts WHERE id = ?");
+$stmt->execute([$contact_id]);
+$contact = $stmt->fetch(PDO::FETCH_ASSOC);
+
+if (!$contact) {
+    // Rediriger si le contact n'existe pas
+    $_SESSION['error_message'] = 'Message introuvable';
+    header('Location: /admin/contacts');
+    exit;
+}
+
+// Note: Status update is now handled by controller to avoid duplication
+
+// Récupérer les fichiers associés
+$stmt = $conn->prepare("SELECT * FROM contact_files WHERE contact_id = ?");
+$stmt->execute([$contact_id]);
+$files = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+// Vérifier l'existence des fichiers sur le disque et logger les erreurs
+foreach ($files as &$file) {
+    $full_path = realpath(ROOT_PATH . ltrim($file['file_path'], '/'));
+    if (!file_exists($full_path)) {
+        error_log('File missing on disk for contact ID ' . $contact_id . ': ' . $file['file_path']);
+        $file['file_missing'] = true; // Indicateur pour gérer les fichiers manquants
+    } else {
+        $file['file_missing'] = false;
+    }
+}
+unset($file); // Libérer la référence
+
+// Log pour débogage
+error_log('Fetched contact ID ' . $contact_id . ' with ' . count($files) . ' files');
+
+// Gestion des messages de succès ou d'erreur
+$success = $_SESSION['success_message'] ?? '';
+unset($_SESSION['success_message']);
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -481,6 +531,11 @@
             opacity: 0.3;
         }
 
+        .file-missing {
+            color: #ef4444;
+            font-style: italic;
+        }
+
         @media (max-width: 768px) {
             .container {
                 padding: 1rem;
@@ -607,7 +662,12 @@
                                         <i class="<?php echo getFileIcon($file['original_name']); ?>"></i>
                                     </div>
                                     <div class="file-info">
-                                        <div class="file-name"><?php echo htmlspecialchars($file['original_name']); ?></div>
+                                        <div class="file-name">
+                                            <?php echo htmlspecialchars($file['original_name']); ?>
+                                            <?php if ($file['file_missing']): ?>
+                                                <span class="file-missing">(Fichier manquant)</span>
+                                            <?php endif; ?>
+                                        </div>
                                         <div class="file-details">
                                             <?php echo formatFileSize($file['file_size']); ?> • 
                                             <?php echo strtoupper(pathinfo($file['original_name'], PATHINFO_EXTENSION)); ?> • 
@@ -615,18 +675,20 @@
                                         </div>
                                     </div>
                                     <div class="file-actions">
-                                        <?php if (strtolower(pathinfo($file['original_name'], PATHINFO_EXTENSION)) === 'pdf'): ?>
-                                            <button class="file-btn btn-view" onclick="viewPDF('<?php echo htmlspecialchars($file['file_path']); ?>', '<?php echo htmlspecialchars($file['original_name']); ?>')" title="Aperçu">
-                                                <i class="fas fa-eye"></i>
-                                            </button>
-                                        <?php elseif (in_array(strtolower(pathinfo($file['original_name'], PATHINFO_EXTENSION)), ['jpg', 'jpeg', 'png', 'gif'])): ?>
-                                            <button class="file-btn btn-view" onclick="viewImage('<?php echo htmlspecialchars($file['file_path']); ?>', '<?php echo htmlspecialchars($file['original_name']); ?>')" title="Aperçu">
-                                                <i class="fas fa-eye"></i>
-                                            </button>
+                                        <?php if (!$file['file_missing']): ?>
+                                            <?php if (strtolower(pathinfo($file['original_name'], PATHINFO_EXTENSION)) === 'pdf'): ?>
+                                                <button class="file-btn btn-view" onclick="viewPDF('<?php echo htmlspecialchars($file['file_path']); ?>', '<?php echo htmlspecialchars($file['original_name']); ?>')" title="Aperçu">
+                                                    <i class="fas fa-eye"></i>
+                                                </button>
+                                            <?php elseif (in_array(strtolower(pathinfo($file['original_name'], PATHINFO_EXTENSION)), ['jpg', 'jpeg', 'png', 'gif'])): ?>
+                                                <button class="file-btn btn-view" onclick="viewImage('<?php echo htmlspecialchars($file['file_path']); ?>', '<?php echo htmlspecialchars($file['original_name']); ?>')" title="Aperçu">
+                                                    <i class="fas fa-eye"></i>
+                                                </button>
+                                            <?php endif; ?>
+                                            <a href="<?php echo htmlspecialchars($file['file_path']); ?>" download="<?php echo htmlspecialchars($file['original_name']); ?>" class="file-btn btn-download" title="Télécharger">
+                                                <i class="fas fa-download"></i>
+                                            </a>
                                         <?php endif; ?>
-                                        <a href="<?php echo htmlspecialchars($file['file_path']); ?>" download="<?php echo htmlspecialchars($file['original_name']); ?>" class="file-btn btn-download" title="Télécharger">
-                                            <i class="fas fa-download"></i>
-                                        </a>
                                     </div>
                                 </div>
                             <?php endforeach; ?>
@@ -641,7 +703,7 @@
                         <div class="empty-files">
                             <i class="fas fa-file"></i>
                             <h3>Aucun fichier joint</h3>
-                            <p>Ce message ne contient aucun fichier.</p>
+                            <p>Ce message ne contient aucun fichier. Vérifiez les logs pour des erreurs d'upload.</p>
                         </div>
                     </div>
                 <?php endif; ?>

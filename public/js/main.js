@@ -134,11 +134,9 @@ document.addEventListener('DOMContentLoaded', () => {
 class FileUploadManager {
     constructor() {
         this.files = [];
-        this.maxFileSize = 5 * 1024 * 1024; // 5MB, aligné avec ContactController.php
+        this.maxFileSize = 5 * 1024 * 1024; // 5MB, aligné avec contact_handler.php
         this.maxFiles = 3; // Aligné avec home.php
-        this.allowedTypes = ['application/pdf', 'image/jpeg', 'image/png']; // Aligné avec ContactController.php
-        this.stripe = null;
-        this.elements = null;
+        this.allowedTypes = ['application/pdf', 'image/jpeg', 'image/png']; // Aligné avec contact_handler.php
         this.init();
     }
 
@@ -161,28 +159,6 @@ class FileUploadManager {
 
         this.initializeAppointmentToggle();
         this.initializePaymentOptions();
-        this.initializeStripe();
-    }
-
-    initializeStripe() {
-        const stripePublicKey = 'pk_test_your_stripe_public_key_here'; // Remplacer par la vraie clé publique Stripe
-        const stripeSection = document.getElementById('stripeSection');
-        if (stripePublicKey && stripeSection && typeof Stripe !== 'undefined') {
-            this.stripe = Stripe(stripePublicKey);
-            this.elements = this.stripe.elements();
-            const paymentElement = this.elements.create('payment', {
-                layout: 'tabs',
-                fields: {
-                    billingDetails: {
-                        name: 'auto',
-                        email: 'auto'
-                    }
-                }
-            });
-            paymentElement.mount('#stripe-payment-element');
-        } else {
-            console.warn('Stripe non initialisé : clé publique manquante ou élément Stripe absent');
-        }
     }
 
     handleDragOver(e) {
@@ -297,9 +273,10 @@ class FileUploadManager {
     async handleFormSubmit(e) {
         e.preventDefault();
         const form = e.target;
-        const submitButton = document.getElementById('submitBtn'); // Utiliser getElementById pour plus de robustesse
+        const submitButton = document.getElementById('submitBtn');
 
         if (!submitButton) {
+            console.error('Bouton de soumission introuvable');
             this.showMessage('Erreur critique : bouton de soumission introuvable.', 'error');
             return;
         }
@@ -315,28 +292,13 @@ class FileUploadManager {
             const paymentMethod = document.querySelector('input[name="payment_method"]:checked')?.value;
 
             if (isAppointment && !paymentMethod) {
-                this.showMessage('Veuillez sélectionner un mode de paiement', 'error');
+                this.showMessage('Veuillez sélectionner le paiement sur place', 'error');
                 throw new Error('Mode de paiement manquant');
             }
 
-            if (isAppointment && paymentMethod === 'online' && this.stripe && this.elements) {
-                const { error } = await this.stripe.confirmPayment({
-                    elements: this.elements,
-                    confirmParams: {
-                        return_url: window.location.origin + '/payment-success',
-                        payment_method_data: {
-                            billing_details: {
-                                name: formData.get('name'),
-                                email: formData.get('email')
-                            }
-                        }
-                    }
-                });
-
-                if (error) {
-                    this.showMessage(error.message || 'Erreur lors du paiement', 'error');
-                    throw new Error(error.message);
-                }
+            if (isAppointment && paymentMethod !== 'onsite') {
+                this.showMessage('Seul le paiement sur place est autorisé', 'error');
+                throw new Error('Mode de paiement invalide');
             }
 
             const response = await fetch('/contact', {
@@ -355,18 +317,24 @@ class FileUploadManager {
                     if (csrfInput) csrfInput.value = data.data.new_token;
                 }
 
+                // Réinitialiser le formulaire
                 form.reset();
                 this.files = [];
                 document.getElementById('filePreview').innerHTML = '';
-                document.getElementById('appointmentToggle').querySelector('.toggle-slider').classList.remove('active');
-                document.getElementById('appointmentDetails').style.display = 'none';
-                document.getElementById('stripeSection').style.display = 'none';
+                document.getElementById('appointmentDetails').style.display = 'block'; // Toujours visible car obligatoire
                 document.getElementById('slot_id').innerHTML = '<option value="">Choisissez une date pour voir les créneaux...</option>';
                 document.getElementById('slot_id').disabled = true;
-                document.getElementById('appointmentRequested').value = '0';
-                document.querySelectorAll('.payment-option').forEach(option => option.classList.remove('selected'));
-                document.querySelectorAll('input[name="payment_method"]').forEach(radio => radio.checked = false);
+                document.getElementById('appointmentRequested').value = '1';
+                const onsitePayment = document.getElementById('paymentOnsite');
+                if (onsitePayment) {
+                    onsitePayment.checked = true;
+                    onsitePayment.closest('.payment-option').classList.add('selected');
+                }
+                document.querySelectorAll('.payment-option').forEach(option => {
+                    if (!option.contains(onsitePayment)) option.classList.remove('selected');
+                });
             } else {
+                console.error('Erreur de soumission:', data.message);
                 this.showMessage(data.message || 'Erreur lors de l\'envoi du formulaire', 'error');
             }
         } catch (error) {
@@ -495,6 +463,8 @@ class FileUploadManager {
         if (onsitePayment) {
             onsitePayment.checked = true;
             onsitePayment.closest('.payment-option').classList.add('selected');
+            // Désactiver l'option pour empêcher la désélection
+            onsitePayment.disabled = true;
         }
         this.updateSubmitButton();
     }
@@ -506,21 +476,17 @@ class FileUploadManager {
         const message = document.getElementById('message')?.value.trim();
         const appointmentDate = document.getElementById('appointment_date')?.value;
         const slotId = document.getElementById('slot_id')?.value;
-        const paymentMethod = document.querySelector('input[name="payment_method"]:checked');
+        const paymentMethod = document.querySelector('input[name="payment_method"]:checked')?.value;
 
-        // Tous les champs sont obligatoires maintenant
-        if (!name || !email || !message || !appointmentDate || !slotId || !paymentMethod) return false;
-        return true;
+        // Tous les champs sont obligatoires, y compris le paiement sur place
+        return name && email && message && appointmentDate && slotId && paymentMethod === 'onsite';
     }
 
     updateSubmitButton() {
         const submitBtn = document.getElementById('submitBtn');
         if (!submitBtn) return;
 
-        // La seule logique nécessaire est d'activer/désactiver le bouton en fonction de la validité du formulaire.
         submitBtn.disabled = !this.isFormValid();
-
-        // Le texte et l'icône sont constants, on s'assure qu'ils sont corrects.
         const submitText = submitBtn.querySelector('#submitText');
         if (submitText) submitText.textContent = 'Demander un rendez-vous';
     }
