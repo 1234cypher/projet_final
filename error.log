@@ -1,0 +1,482 @@
+[14-Aug-2025 09:14:02 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(20): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 09:14:15 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(20): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 09:14:19 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(20): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 09:14:20 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(20): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 09:14:20 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(20): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 09:14:22 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(20): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 09:18:19 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(20): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 09:24:40 UTC] Request received: /serve_file.php?id=1&view=true
+[14-Aug-2025 09:24:40 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(23): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 09:24:46 UTC] Request received: /serve_file.php?id=1
+[14-Aug-2025 09:24:46 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(23): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 09:32:46 UTC] Request received: /serve_file.php?id=1&view=true
+[14-Aug-2025 09:32:46 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(23): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 09:32:52 UTC] Request received: /serve_file.php?id=1
+[14-Aug-2025 09:32:52 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(23): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 09:32:57 UTC] Request received: /serve_file.php?id=1
+[14-Aug-2025 09:32:57 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(23): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 09:32:58 UTC] Request received: /serve_file.php?id=1
+[14-Aug-2025 09:32:58 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(23): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 09:37:13 UTC] Request received: /serve_file.php?id=1&view=true
+[14-Aug-2025 09:37:13 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(23): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 09:58:09 UTC] Request received: /serve_file.php?id=1
+[14-Aug-2025 09:58:09 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(23): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 09:58:11 UTC] Request received: /serve_file.php?id=1&view=true
+[14-Aug-2025 09:58:11 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(23): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 10:44:09 UTC] Request received: /serve_file.php?id=1&view=true
+[14-Aug-2025 10:44:09 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(23): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 11:04:53 UTC] Request received: /serve_file.php?id=1&view=true
+[14-Aug-2025 11:04:53 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(23): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 11:08:01 UTC] Request received: /serve_file.php?id=4&view=true
+[14-Aug-2025 11:08:01 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(23): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 11:08:18 UTC] Request received: /serve_file.php?id=4
+[14-Aug-2025 11:08:18 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(23): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 11:08:57 UTC] Request received: /serve_file.php?id=4&view=true
+[14-Aug-2025 11:08:57 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(23): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 11:09:02 UTC] Request received: /serve_file.php?id=4&view=true
+[14-Aug-2025 11:09:02 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(23): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 11:09:06 UTC] Request received: /serve_file.php?id=4
+[14-Aug-2025 11:09:06 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(23): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 11:09:11 UTC] Request received: /serve_file.php?id=4
+[14-Aug-2025 11:09:11 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(23): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 11:09:11 UTC] Request received: /serve_file.php?id=4
+[14-Aug-2025 11:09:11 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(23): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 11:21:08 UTC] Request received: /serve_file.php?id=6&view=true
+[14-Aug-2025 11:21:08 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(23): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 11:24:54 UTC] Request received: /serve_file.php?id=6&view=true
+[14-Aug-2025 11:24:54 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(23): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 11:25:19 UTC] Request received: /serve_file.php?id=6&view=true
+[14-Aug-2025 11:25:19 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(23): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 11:30:25 UTC] Request received: /serve_file.php?id=6&view=true
+[14-Aug-2025 11:30:25 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(23): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 11:35:03 UTC] Request received: /serve_file.php?id=6&view=true
+[14-Aug-2025 11:35:03 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(23): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 12:20:54 UTC] Request received: /serve_file.php?id=6&view=true
+[14-Aug-2025 12:20:54 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(23): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 13:02:34 UTC] Request received: /serve_file.php?id=2&view=true
+[14-Aug-2025 13:02:34 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(23): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 13:24:28 UTC] Request received: /serve_file.php?id=1&view=true
+[14-Aug-2025 13:24:28 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(23): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 13:25:09 UTC] Request received: /serve_file.php?id=1
+[14-Aug-2025 13:25:09 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(23): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 13:25:13 UTC] Request received: /serve_file.php?id=1
+[14-Aug-2025 13:25:13 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(23): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 13:25:14 UTC] Request received: /serve_file.php?id=1
+[14-Aug-2025 13:25:14 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(23): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 13:28:53 UTC] Request received: /serve_file.php?id=1&view=true
+[14-Aug-2025 13:28:53 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(23): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 13:31:38 UTC] Request received: /serve_file.php?id=1&view=true
+[14-Aug-2025 13:31:38 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(23): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 13:44:26 UTC] Request received: /serve_file.php?id=1&view=true
+[14-Aug-2025 13:44:26 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(24): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 14:22:47 UTC] Request received: /serve_file.php?id=1&view=true
+[14-Aug-2025 14:22:47 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(24): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 14:31:37 UTC] Request received: /serve_file.php?id=1&view=true
+[14-Aug-2025 14:31:37 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(24): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 14:31:45 UTC] Request received: /serve_file.php?id=1&view=true
+[14-Aug-2025 14:31:45 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(24): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 14:34:29 UTC] Request received: /serve_file.php?id=1&view=true
+[14-Aug-2025 14:34:29 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(24): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 14:34:36 UTC] Request received: /serve_file.php?id=1&view=true
+[14-Aug-2025 14:34:36 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(24): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 14:39:38 UTC] Request received: /serve_file.php?id=1&view=true
+[14-Aug-2025 14:39:38 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(24): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 14:39:44 UTC] Request received: /serve_file.php?id=1
+[14-Aug-2025 14:39:44 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(24): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 14:39:47 UTC] Request received: /serve_file.php?id=1
+[14-Aug-2025 14:39:47 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(24): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 14:39:48 UTC] Request received: /serve_file.php?id=1
+[14-Aug-2025 14:39:48 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(24): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 14:41:40 UTC] Request received: /serve_file.php?id=1
+[14-Aug-2025 14:41:40 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(24): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 14:41:41 UTC] Request received: /serve_file.php?id=1&view=true
+[14-Aug-2025 14:41:41 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(24): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 14:55:56 UTC] Request received: /serve_file.php?id=1&view=true
+[14-Aug-2025 14:55:56 UTC] Database connection successful
+[14-Aug-2025 14:55:56 UTC] File ID requested: 1
+[14-Aug-2025 14:55:56 UTC] File not found in database for ID: 1
+[14-Aug-2025 14:56:17 UTC] Request received: /serve_file.php?id=1
+[14-Aug-2025 14:56:17 UTC] Database connection successful
+[14-Aug-2025 14:56:17 UTC] File ID requested: 1
+[14-Aug-2025 14:56:17 UTC] File not found in database for ID: 1
+[14-Aug-2025 14:59:14 UTC] Request received: /serve_file.php?id=1&view=true
+[14-Aug-2025 14:59:14 UTC] Database connection successful
+[14-Aug-2025 14:59:14 UTC] File ID requested: 1
+[14-Aug-2025 14:59:14 UTC] File not found in database for ID: 1
+[14-Aug-2025 15:18:11 UTC] Request received: /serve_file.php?id=2&view=true
+[14-Aug-2025 15:18:11 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(24): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 15:40:07 UTC] Request received: /serve_file.php?id=3
+[14-Aug-2025 15:40:07 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(24): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 15:40:11 UTC] Request received: /serve_file.php?id=3
+[14-Aug-2025 15:40:11 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(24): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 15:47:19 UTC] Request received: /serve_file.php?id=2&view=true
+[14-Aug-2025 15:47:19 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "DB_NAME" in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php:8
+Stack trace:
+#0 C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\serve_file.php(24): Database->getConnection()
+#1 {main}
+  thrown in C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\includes\Database.php on line 8
+[14-Aug-2025 16:39:40 UTC] Request received: /serve_file.php?id=1&view=true
+[14-Aug-2025 18:39:40 Europe/Paris] Database connection successful
+[14-Aug-2025 18:39:40 Europe/Paris] File ID requested: 1
+[14-Aug-2025 18:39:40 Europe/Paris] File found in database: {"file_path":"Uploads\/contact_1\/1755189516_689e110c4282b.pdf","file_type":"pdf","original_name":"INF242_Support2.pdf","contact_id":1}
+[14-Aug-2025 18:39:40 Europe/Paris] Attempting to access file: C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\uploads\contact_1\1755189516_689e110c4282b.pdf
+[14-Aug-2025 18:39:40 Europe/Paris] Serving file type: pdf, MIME: application/pdf
+[14-Aug-2025 18:39:40 Europe/Paris] Content-Disposition: inline
+[14-Aug-2025 18:39:40 Europe/Paris] File served successfully: C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\uploads\contact_1\1755189516_689e110c4282b.pdf
+[14-Aug-2025 16:39:58 UTC] Request received: /serve_file.php?id=1&view=true
+[14-Aug-2025 18:39:59 Europe/Paris] Database connection successful
+[14-Aug-2025 18:39:59 Europe/Paris] File ID requested: 1
+[14-Aug-2025 18:39:59 Europe/Paris] File found in database: {"file_path":"Uploads\/contact_1\/1755189516_689e110c4282b.pdf","file_type":"pdf","original_name":"INF242_Support2.pdf","contact_id":1}
+[14-Aug-2025 18:39:59 Europe/Paris] Attempting to access file: C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\uploads\contact_1\1755189516_689e110c4282b.pdf
+[14-Aug-2025 18:39:59 Europe/Paris] Serving file type: pdf, MIME: application/pdf
+[14-Aug-2025 18:39:59 Europe/Paris] Content-Disposition: inline
+[14-Aug-2025 18:39:59 Europe/Paris] File served successfully: C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\uploads\contact_1\1755189516_689e110c4282b.pdf
+[14-Aug-2025 16:42:08 UTC] Request received: /serve_file.php?id=2&view=true
+[14-Aug-2025 18:42:08 Europe/Paris] Database connection successful
+[14-Aug-2025 18:42:08 Europe/Paris] File ID requested: 2
+[14-Aug-2025 18:42:08 Europe/Paris] File found in database: {"file_path":"Uploads\/contact_2\/1755189692_689e11bc4a17b.jpg","file_type":"jpg","original_name":"wow.jpg","contact_id":2}
+[14-Aug-2025 18:42:08 Europe/Paris] Attempting to access file: C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\uploads\contact_2\1755189692_689e11bc4a17b.jpg
+[14-Aug-2025 18:42:08 Europe/Paris] Serving file type: jpg, MIME: image/jpeg
+[14-Aug-2025 18:42:08 Europe/Paris] Content-Disposition: inline
+[14-Aug-2025 18:42:08 Europe/Paris] File served successfully: C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\uploads\contact_2\1755189692_689e11bc4a17b.jpg
+[14-Aug-2025 16:42:41 UTC] Request received: /serve_file.php?id=2&view=true
+[14-Aug-2025 18:42:42 Europe/Paris] Database connection successful
+[14-Aug-2025 18:42:42 Europe/Paris] File ID requested: 2
+[14-Aug-2025 18:42:42 Europe/Paris] File found in database: {"file_path":"Uploads\/contact_2\/1755189692_689e11bc4a17b.jpg","file_type":"jpg","original_name":"wow.jpg","contact_id":2}
+[14-Aug-2025 18:42:42 Europe/Paris] Attempting to access file: C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\uploads\contact_2\1755189692_689e11bc4a17b.jpg
+[14-Aug-2025 18:42:42 Europe/Paris] Serving file type: jpg, MIME: image/jpeg
+[14-Aug-2025 18:42:42 Europe/Paris] Content-Disposition: inline
+[14-Aug-2025 18:42:42 Europe/Paris] File served successfully: C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\uploads\contact_2\1755189692_689e11bc4a17b.jpg
+[14-Aug-2025 16:45:27 UTC] Request received: /serve_file.php?id=3&view=true
+[14-Aug-2025 18:45:27 Europe/Paris] Database connection successful
+[14-Aug-2025 18:45:27 Europe/Paris] File ID requested: 3
+[14-Aug-2025 18:45:27 Europe/Paris] File found in database: {"file_path":"Uploads\/contact_3\/1755189910_689e12964adeb.pdf","file_type":"pdf","original_name":"INF242_Support2.pdf","contact_id":3}
+[14-Aug-2025 18:45:27 Europe/Paris] Attempting to access file: C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\uploads\contact_3\1755189910_689e12964adeb.pdf
+[14-Aug-2025 18:45:27 Europe/Paris] Serving file type: pdf, MIME: application/pdf
+[14-Aug-2025 18:45:27 Europe/Paris] Content-Disposition: inline
+[14-Aug-2025 18:45:27 Europe/Paris] File served successfully: C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\uploads\contact_3\1755189910_689e12964adeb.pdf
+[14-Aug-2025 16:45:37 UTC] Request received: /serve_file.php?id=4&view=true
+[14-Aug-2025 18:45:38 Europe/Paris] Database connection successful
+[14-Aug-2025 18:45:38 Europe/Paris] File ID requested: 4
+[14-Aug-2025 18:45:38 Europe/Paris] File found in database: {"file_path":"Uploads\/contact_3\/1755189910_689e12964b1a2.jpg","file_type":"jpg","original_name":"WhatsApp Image 2025-07-19 \u00e0 23.32.35_f10b369f.jpg","contact_id":3}
+[14-Aug-2025 18:45:38 Europe/Paris] Attempting to access file: C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\uploads\contact_3\1755189910_689e12964b1a2.jpg
+[14-Aug-2025 18:45:38 Europe/Paris] Serving file type: jpg, MIME: image/jpeg
+[14-Aug-2025 18:45:38 Europe/Paris] Content-Disposition: inline
+[14-Aug-2025 18:45:38 Europe/Paris] File served successfully: C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\uploads\contact_3\1755189910_689e12964b1a2.jpg
+[14-Aug-2025 16:46:03 UTC] Request received: /serve_file.php?id=4&view=true
+[14-Aug-2025 18:46:04 Europe/Paris] Database connection successful
+[14-Aug-2025 18:46:04 Europe/Paris] File ID requested: 4
+[14-Aug-2025 18:46:04 Europe/Paris] File found in database: {"file_path":"Uploads\/contact_3\/1755189910_689e12964b1a2.jpg","file_type":"jpg","original_name":"WhatsApp Image 2025-07-19 \u00e0 23.32.35_f10b369f.jpg","contact_id":3}
+[14-Aug-2025 18:46:04 Europe/Paris] Attempting to access file: C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\uploads\contact_3\1755189910_689e12964b1a2.jpg
+[14-Aug-2025 18:46:04 Europe/Paris] Serving file type: jpg, MIME: image/jpeg
+[14-Aug-2025 18:46:04 Europe/Paris] Content-Disposition: inline
+[14-Aug-2025 18:46:04 Europe/Paris] File served successfully: C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\uploads\contact_3\1755189910_689e12964b1a2.jpg
+[14-Aug-2025 16:46:10 UTC] Request received: /serve_file.php?id=4&view=true
+[14-Aug-2025 18:46:10 Europe/Paris] Database connection successful
+[14-Aug-2025 18:46:10 Europe/Paris] File ID requested: 4
+[14-Aug-2025 18:46:10 Europe/Paris] File found in database: {"file_path":"Uploads\/contact_3\/1755189910_689e12964b1a2.jpg","file_type":"jpg","original_name":"WhatsApp Image 2025-07-19 \u00e0 23.32.35_f10b369f.jpg","contact_id":3}
+[14-Aug-2025 18:46:10 Europe/Paris] Attempting to access file: C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\uploads\contact_3\1755189910_689e12964b1a2.jpg
+[14-Aug-2025 18:46:10 Europe/Paris] Serving file type: jpg, MIME: image/jpeg
+[14-Aug-2025 18:46:10 Europe/Paris] Content-Disposition: inline
+[14-Aug-2025 18:46:10 Europe/Paris] File served successfully: C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\uploads\contact_3\1755189910_689e12964b1a2.jpg
+[14-Aug-2025 16:46:46 UTC] Request received: /serve_file.php?id=2&view=true
+[14-Aug-2025 18:46:47 Europe/Paris] Database connection successful
+[14-Aug-2025 18:46:47 Europe/Paris] File ID requested: 2
+[14-Aug-2025 18:46:47 Europe/Paris] File found in database: {"file_path":"Uploads\/contact_2\/1755189692_689e11bc4a17b.jpg","file_type":"jpg","original_name":"wow.jpg","contact_id":2}
+[14-Aug-2025 18:46:47 Europe/Paris] Attempting to access file: C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\uploads\contact_2\1755189692_689e11bc4a17b.jpg
+[14-Aug-2025 18:46:47 Europe/Paris] Serving file type: jpg, MIME: image/jpeg
+[14-Aug-2025 18:46:47 Europe/Paris] Content-Disposition: inline
+[14-Aug-2025 18:46:47 Europe/Paris] File served successfully: C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\uploads\contact_2\1755189692_689e11bc4a17b.jpg
+[14-Aug-2025 16:48:32 UTC] Request received: /serve_file.php?id=5&view=true
+[14-Aug-2025 18:48:33 Europe/Paris] Database connection successful
+[14-Aug-2025 18:48:33 Europe/Paris] File ID requested: 5
+[14-Aug-2025 18:48:33 Europe/Paris] File found in database: {"file_path":"Uploads\/contact_4\/1755190072_689e1338a3eb4.pdf","file_type":"pdf","original_name":"t\u00e9l\u00e9chargement.pdf","contact_id":4}
+[14-Aug-2025 18:48:33 Europe/Paris] Attempting to access file: C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\uploads\contact_4\1755190072_689e1338a3eb4.pdf
+[14-Aug-2025 18:48:33 Europe/Paris] Serving file type: pdf, MIME: application/pdf
+[14-Aug-2025 18:48:33 Europe/Paris] Content-Disposition: inline
+[14-Aug-2025 18:48:33 Europe/Paris] File served successfully: C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\uploads\contact_4\1755190072_689e1338a3eb4.pdf
+[14-Aug-2025 16:50:58 UTC] Request received: /serve_file.php?id=5&view=true
+[14-Aug-2025 18:50:58 Europe/Paris] Database connection successful
+[14-Aug-2025 18:50:58 Europe/Paris] File ID requested: 5
+[14-Aug-2025 18:50:58 Europe/Paris] File found in database: {"file_path":"Uploads\/contact_4\/1755190072_689e1338a3eb4.pdf","file_type":"pdf","original_name":"t\u00e9l\u00e9chargement.pdf","contact_id":4}
+[14-Aug-2025 18:50:58 Europe/Paris] Attempting to access file: C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\uploads\contact_4\1755190072_689e1338a3eb4.pdf
+[14-Aug-2025 18:50:58 Europe/Paris] Serving file type: pdf, MIME: application/pdf
+[14-Aug-2025 18:50:58 Europe/Paris] Content-Disposition: inline
+[14-Aug-2025 18:50:58 Europe/Paris] File served successfully: C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\uploads\contact_4\1755190072_689e1338a3eb4.pdf
+[14-Aug-2025 16:51:05 UTC] Request received: /serve_file.php?id=6&view=true
+[14-Aug-2025 18:51:05 Europe/Paris] Database connection successful
+[14-Aug-2025 18:51:05 Europe/Paris] File ID requested: 6
+[14-Aug-2025 18:51:05 Europe/Paris] File found in database: {"file_path":"Uploads\/contact_4\/1755190072_689e1338a41e2.jpg","file_type":"jpg","original_name":"avocat1.jpg","contact_id":4}
+[14-Aug-2025 18:51:05 Europe/Paris] Attempting to access file: C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\uploads\contact_4\1755190072_689e1338a41e2.jpg
+[14-Aug-2025 18:51:05 Europe/Paris] Serving file type: jpg, MIME: image/jpeg
+[14-Aug-2025 18:51:05 Europe/Paris] Content-Disposition: inline
+[14-Aug-2025 18:51:05 Europe/Paris] File served successfully: C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\uploads\contact_4\1755190072_689e1338a41e2.jpg
+[14-Aug-2025 20:48:01 UTC] Request received: /serve_file.php?id=1&view=true
+[14-Aug-2025 22:48:01 Europe/Paris] Database connection successful
+[14-Aug-2025 22:48:01 Europe/Paris] File ID requested: 1
+[14-Aug-2025 22:48:01 Europe/Paris] File found in database: {"file_path":"Uploads\/contact_1\/1755189516_689e110c4282b.pdf","file_type":"pdf","original_name":"INF242_Support2.pdf","contact_id":1}
+[14-Aug-2025 22:48:01 Europe/Paris] Attempting to access file: C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\uploads\contact_1\1755189516_689e110c4282b.pdf
+[14-Aug-2025 22:48:01 Europe/Paris] Serving file type: pdf, MIME: application/pdf
+[14-Aug-2025 22:48:01 Europe/Paris] Content-Disposition: inline
+[14-Aug-2025 22:48:01 Europe/Paris] File served successfully: C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\uploads\contact_1\1755189516_689e110c4282b.pdf
+[15-Aug-2025 10:38:18 UTC] Request received: /serve_file.php?id=7&view=true
+[15-Aug-2025 12:38:18 Europe/Paris] Database connection successful
+[15-Aug-2025 12:38:18 Europe/Paris] File ID requested: 7
+[15-Aug-2025 12:38:18 Europe/Paris] File found in database: {"file_path":"Uploads\/contact_5\/1755254247_689f0de7e8f85.pdf","file_type":"pdf","original_name":"t\u00e9l\u00e9chargement.pdf","contact_id":5}
+[15-Aug-2025 12:38:18 Europe/Paris] Attempting to access file: C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\uploads\contact_5\1755254247_689f0de7e8f85.pdf
+[15-Aug-2025 12:38:18 Europe/Paris] Serving file type: pdf, MIME: application/pdf
+[15-Aug-2025 12:38:18 Europe/Paris] Content-Disposition: inline
+[15-Aug-2025 12:38:18 Europe/Paris] File served successfully: C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\uploads\contact_5\1755254247_689f0de7e8f85.pdf
+[15-Aug-2025 10:38:26 UTC] Request received: /serve_file.php?id=8&view=true
+[15-Aug-2025 12:38:27 Europe/Paris] Database connection successful
+[15-Aug-2025 12:38:27 Europe/Paris] File ID requested: 8
+[15-Aug-2025 12:38:27 Europe/Paris] File found in database: {"file_path":"Uploads\/contact_5\/1755254247_689f0de7e9330.jpeg","file_type":"jpeg","original_name":"test2.jpeg","contact_id":5}
+[15-Aug-2025 12:38:27 Europe/Paris] Attempting to access file: C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\uploads\contact_5\1755254247_689f0de7e9330.jpeg
+[15-Aug-2025 12:38:27 Europe/Paris] Serving file type: jpeg, MIME: image/jpeg
+[15-Aug-2025 12:38:27 Europe/Paris] Content-Disposition: inline
+[15-Aug-2025 12:38:27 Europe/Paris] File served successfully: C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\uploads\contact_5\1755254247_689f0de7e9330.jpeg
+[15-Aug-2025 10:38:31 UTC] Request received: /serve_file.php?id=7
+[15-Aug-2025 12:38:31 Europe/Paris] Database connection successful
+[15-Aug-2025 12:38:31 Europe/Paris] File ID requested: 7
+[15-Aug-2025 12:38:31 Europe/Paris] File found in database: {"file_path":"Uploads\/contact_5\/1755254247_689f0de7e8f85.pdf","file_type":"pdf","original_name":"t\u00e9l\u00e9chargement.pdf","contact_id":5}
+[15-Aug-2025 12:38:31 Europe/Paris] Attempting to access file: C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\uploads\contact_5\1755254247_689f0de7e8f85.pdf
+[15-Aug-2025 12:38:31 Europe/Paris] Serving file type: pdf, MIME: application/pdf
+[15-Aug-2025 12:38:31 Europe/Paris] Content-Disposition: attachment
+[15-Aug-2025 12:38:31 Europe/Paris] File served successfully: C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\uploads\contact_5\1755254247_689f0de7e8f85.pdf
+[15-Aug-2025 10:38:34 UTC] Request received: /serve_file.php?id=8
+[15-Aug-2025 12:38:34 Europe/Paris] Database connection successful
+[15-Aug-2025 12:38:34 Europe/Paris] File ID requested: 8
+[15-Aug-2025 12:38:34 Europe/Paris] File found in database: {"file_path":"Uploads\/contact_5\/1755254247_689f0de7e9330.jpeg","file_type":"jpeg","original_name":"test2.jpeg","contact_id":5}
+[15-Aug-2025 12:38:34 Europe/Paris] Attempting to access file: C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\uploads\contact_5\1755254247_689f0de7e9330.jpeg
+[15-Aug-2025 12:38:34 Europe/Paris] Serving file type: jpeg, MIME: image/jpeg
+[15-Aug-2025 12:38:34 Europe/Paris] Content-Disposition: attachment
+[15-Aug-2025 12:38:34 Europe/Paris] File served successfully: C:\Users\HP PC\Desktop\project1\project-bolt-github-ydgix1ar\project\uploads\contact_5\1755254247_689f0de7e9330.jpeg
+[21-Aug-2025 10:54:44 UTC] Request received: /serve_file.php?id=1&view=true
+[21-Aug-2025 12:54:44 Europe/Paris] Database connection successful
+[21-Aug-2025 12:54:44 Europe/Paris] File ID requested: 1
+[21-Aug-2025 12:54:44 Europe/Paris] File found in database: {"file_path":"Uploads\/contact_1\/1755773663_68a6fadf2ca3b.png","file_type":"png","original_name":"php.png","contact_id":1}
+[21-Aug-2025 12:54:44 Europe/Paris] Attempting to access file: C:\Users\HP PC\Desktop\project1\project\uploads\contact_1\1755773663_68a6fadf2ca3b.png
+[21-Aug-2025 12:54:44 Europe/Paris] Serving file type: png, MIME: image/png
+[21-Aug-2025 12:54:44 Europe/Paris] Content-Disposition: inline
+[21-Aug-2025 12:54:44 Europe/Paris] File served successfully: C:\Users\HP PC\Desktop\project1\project\uploads\contact_1\1755773663_68a6fadf2ca3b.png
+[21-Aug-2025 10:54:48 UTC] Request received: /serve_file.php?id=1
+[21-Aug-2025 12:54:49 Europe/Paris] Database connection successful
+[21-Aug-2025 12:54:49 Europe/Paris] File ID requested: 1
+[21-Aug-2025 12:54:49 Europe/Paris] File found in database: {"file_path":"Uploads\/contact_1\/1755773663_68a6fadf2ca3b.png","file_type":"png","original_name":"php.png","contact_id":1}
+[21-Aug-2025 12:54:49 Europe/Paris] Attempting to access file: C:\Users\HP PC\Desktop\project1\project\uploads\contact_1\1755773663_68a6fadf2ca3b.png
+[21-Aug-2025 12:54:49 Europe/Paris] Serving file type: png, MIME: image/png
+[21-Aug-2025 12:54:49 Europe/Paris] Content-Disposition: attachment
+[21-Aug-2025 12:54:49 Europe/Paris] File served successfully: C:\Users\HP PC\Desktop\project1\project\uploads\contact_1\1755773663_68a6fadf2ca3b.png
+[21-Aug-2025 14:46:10 UTC] Request received: /serve_file.php?id=1&view=true
